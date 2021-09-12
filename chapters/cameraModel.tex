@@ -328,7 +328,7 @@ int main(int argc, char **argv) {
         return 0;
     }
     
-    // check hte pixels
+    // check the pixels
     chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
     for (size_t y = 0; y < image.rows; y++) {
         // use cv::Mat::ptr to get the pointer of each row
@@ -411,7 +411,7 @@ using namespace std;
 string image_file = "./distorted.png";   // the distorted image 
 
 int main(int argc, char **argv) {
-    // In thie program we implement the undistortion by ourselves rather than using opencv
+    // In this program we implement the undistortion by ourselves rather than using opencv
     // rad-tan model params
     double k1 = -0.28340811, k2 = 0.07395907, p1 = 0.00019359, p2 = 1.76187114e-05;
     // intrinsics
